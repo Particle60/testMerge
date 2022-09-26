@@ -1,17 +1,16 @@
 <cofluent:Application xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cofluent="http://cofluent.intel.com/cofluent/1.0.0" xmi:version="2.0" cyclePeriod="10 ns" affinity="0" priority="1" schedulingPolicy="FIFO" InterfaceBlockingBehavior="RELEASE_CORE" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" allowContainedMembersToAccess="false" boostDestructorPerformance="false" name="fff" enableISIM="false" simicsClassName="" simicsObjectName="" useModuleName="false" useCustomizedName="false" xmi:id="_OeDWY6nbhZQql0FqmWLwVT">
   <refinement name="fffSt" xsi:type="cofluent:Structure" xmi:id="_4tC65CeT-Ij44PgOInfek4">
     <relations capacity="1" concurrency="1" concurrencyManagement="FULL" sendTime="1 ns" receiveTime="1 ns" sendThreshold="1" receiveThreshold="1" protocol="COFLUENT" address="" mask="" response="" messageQueueType="STANDARD" chiselCosimInterfaceProtocol="COFLUENT_DPI_INTERFACE" cosimChiselAxiDataWidth="64" cosimChiselAxiAddressWidth="32" cosimChiselAxiCombine="" cosimChiselDataPortBits="" name="MsgQ" xmi:id="_UFu8Eyix4GaIh8AvfDjfwg" xsi:type="cofluent:MessageQueue" ports="__MyxhsyN9EkkGNckezTKBD _3dKo8Q70_4ekmRllXff-2Q">
-      <relationType xmi:id="_MeRBw9fUPfjho3jh3isrhP" xsi:type="cofluent:RelationPredefinedType" predefinedType="INTEGER"/>
+      <relationType xmi:id="_LIl8T39BQhwqboFj2SDOcF" xsi:type="cofluent:RelationPredefinedType" predefinedType="INTEGER"/>
     </relations>
     <models coSimulationType="NONE_COSIM" blackbox="false" cyclePeriod=" ns" scope="SYSTEM" doNotStart="false" affinity="" priority="0" schedulingPolicy="FIFO" InterfaceBlockingBehavior="RELEASE_CORE" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" allowContainedMembersToAccess="false" doNotInstance="false" boostDestructorPerformance="false" includeInheritedHeader="" inheritanceClass="" callToInheritedConstructors="" name="Consumer" enableISIM="false" simicsClassName="" simicsObjectName="" useModuleName="false" useCustomizedName="false" xmi:id="_9QCDRZ3r2oIQ3pcfDBEd19" xsi:type="cofluent:Function">
       <ports type="MESSAGE_QUEUE" direction="IN" size="" synchronizeName="true" vector="false" requestPipelineDepth="1" name="MsgQ" xmi:id="_3dKo8Q70_4ekmRllXff-2Q" inputActions="_5XMU4q8RBDtZPvZNLOk3yM" relations="_UFu8Eyix4GaIh8AvfDjfwg">
         <constructorArguments/>
         <templateArguments/>
       </ports>
-      <refinement name="ConsumerBh" xsi:type="cofluent:Behavior" xmi:id="_M_V0HxA01P9EsdKDpfD-qR" firstStatement="_4UxhpC8bkZXM4l_omUD1Ug">
-        <statements executionTime="10 ns" nonBlocking="false" systematicRead="false" systematicWrite="false" abortPort="" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" type="ACTIVE" dynamicResourceLoad="" name="init" xmi:id="_4UxhpC8bkZXM4l_omUD1Ug" xsi:type="cofluent:Operation" next="_CUMZdwWPa-xLpViZcdMY8O" isFirstOf="_M_V0HxA01P9EsdKDpfD-qR"/>
+      <refinement name="ConsumerBh" xsi:type="cofluent:Behavior" xmi:id="_M_V0HxA01P9EsdKDpfD-qR" firstStatement="_CUMZdwWPa-xLpViZcdMY8O">
         <statements timeout=" ns" priority="" broadcast="false" duration=" ns" vectorSize="" blocking="true" condition="" doNotRead="false" name="InputAction" xmi:id="_5XMU4q8RBDtZPvZNLOk3yM" xsi:type="cofluent:InputAction" next="_IZ4EnczVMCu8Gb_WXirIq4" isFirstOf="_CUMZdwWPa-xLpViZcdMY8O" port="_3dKo8Q70_4ekmRllXff-2Q"/>
-        <statements name="LoopStatement" xmi:id="_CUMZdwWPa-xLpViZcdMY8O" xsi:type="cofluent:LoopStatement" previous="_4UxhpC8bkZXM4l_omUD1Ug" firstStatement="_5XMU4q8RBDtZPvZNLOk3yM" lastStatement="_IZ4EnczVMCu8Gb_WXirIq4"/>
+        <statements name="LoopStatement" xmi:id="_CUMZdwWPa-xLpViZcdMY8O" xsi:type="cofluent:LoopStatement" firstStatement="_5XMU4q8RBDtZPvZNLOk3yM" lastStatement="_IZ4EnczVMCu8Gb_WXirIq4" isFirstOf="_M_V0HxA01P9EsdKDpfD-qR"/>
         <statements executionTime="10 ns" nonBlocking="false" systematicRead="false" systematicWrite="false" abortPort="" dynamicDataSize="0 kB" dynamicPowerConsumption=" uW" type="ACTIVE" dynamicResourceLoad="" name="consume" xmi:id="_IZ4EnczVMCu8Gb_WXirIq4" xsi:type="cofluent:Operation" previous="_5XMU4q8RBDtZPvZNLOk3yM" isLastOf="_CUMZdwWPa-xLpViZcdMY8O"/>
       </refinement>
     </models>
@@ -27,5 +26,6 @@
         <statements duration=" ns" condition="" priority="" vectorSize="" blocking="true" call="" name="OutputAction" xmi:id="__9aOIZ6W-SaFz52CvYdyxD" xsi:type="cofluent:OutputAction" previous="_2rb1ZoDs2eVUhj29IP8Qb6" isLastOf="_QBrqpnzlkTq2GMh5ZuhVeT" port="__MyxhsyN9EkkGNckezTKBD"/>
       </refinement>
     </models>
+    <models ratio="1" executionTime="10 ns" cyclePeriod=" ns" scope="SYSTEM" doNotStart="false" affinity="" priority="0" schedulingPolicy="FIFO" InterfaceBlockingBehavior="RELEASE_CORE" timeSlicePeriod="10 ms" staticCodeSize="0 kB" staticDataSize="0 kB" staticPowerConsumption="0 uW" dynamicPowerConsumption="0 uW" cost="0 USD" dynamicResourceLoad="100" doNotInstance="false" includeInheritedHeader="" inheritanceClass="" callToInheritedConstructors="" name="Divider" xmi:id="_7Ci7qzb8IN6wIsoTsO3T-F" xsi:type="cofluent:Divider"/>
   </refinement>
 </cofluent:Application>
