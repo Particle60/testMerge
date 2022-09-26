@@ -329,7 +329,8 @@
                 "_MkwcRE1qWQVQGmVaOWRAY2",
                 "_UFu8Eyix4GaIh8AvfDjfwg",
                 "_9QCDRZ3r2oIQ3pcfDBEd19",
-                "_IotGu1eWedc3r92-Yg2UzK"
+                "_IotGu1eWedc3r92-Yg2UzK",
+                "_hWKSsz8TC2xjjzt16RWqur"
             ],
             "parent": "_OeDWY6nbhZQql0FqmWLwVT",
             "attrs": {
@@ -2287,7 +2288,8 @@
                 "algorithm": {
                     "type": "EString",
                     "annotations": {
-                        "type": "algorithm"
+                        "type": "algorithm",
+                        "defaultValue": "printf(\"hello\\n\");"
                     }
                 },
                 "executionTime": {
@@ -2890,6 +2892,7 @@
             "z": 18,
             "notationId": "_bWQ2E3UgSy5XZWRjM3I5Mi",
             "embeds": [
+                "_ITcxYGs1ch5oV0dLKF5eUG",
                 "_UFJ2fUBbZTxrGXtialkEMk",
                 "_58P_Pdj_3_L1xUPnbdEWQ9",
                 "__MyxhsyN9EkkGNckezTKBD"
@@ -2988,12 +2991,9 @@
             "z": 19,
             "embeds": [
                 "_Q3AkbFoCZT9gSUtmX1w-Mk",
-                "_HhEYWEtPBSJ5DURPIFd0UG",
-                "_CFJwV2AdZlx9JnRWURZ6eX",
                 "_RRcqYk9zY0QBYG9DO0xAaD",
                 "_H1wWYWhNd0ceLipuflhIMj",
                 "_2rb1ZoDs2eVUhj29IP8Qb6",
-                "_D_gTvPpJBlQH0qyzDdEYqa",
                 "_QBrqpnzlkTq2GMh5ZuhVeT",
                 "__9aOIZ6W-SaFz52CvYdyxD"
             ],
@@ -3326,327 +3326,6 @@
                 {
                     "x": 91,
                     "y": 210
-                }
-            ],
-            "attrs": {
-                "wrapper": {
-                    "connection": true,
-                    "fill": "none",
-                    "stroke": "#ffffff",
-                    "strokeWidth": 5,
-                    "strokeOpacity": 0,
-                    "strokeLinejoin": "bevel"
-                },
-                "core": {
-                    "connection": true,
-                    "fill": "none",
-                    "stroke": "#000000",
-                    "strokeWidth": 1,
-                    "strokeDasharray": "",
-                    "strokeLinejoin": "bevel",
-                    "targetMarker": {
-                        "type": "path",
-                        "fill": "#000000",
-                        "stroke": "#000000",
-                        "stroke-width": 1,
-                        "d": "M 6 -3 0 0 6 3 0 0 Z"
-                    }
-                }
-            }
-        },
-        {
-            "type": "cofluent.component.Operation",
-            "markup": [
-                {
-                    "tagName": "path",
-                    "selector": "body"
-                },
-                {
-                    "tagName": "image",
-                    "selector": "documentIcon"
-                },
-                {
-                    "tagName": "text",
-                    "selector": "label"
-                }
-            ],
-            "position": {
-                "x": 66,
-                "y": 110
-            },
-            "size": {
-                "width": 50,
-                "height": 22
-            },
-            "ports": {
-                "groups": {
-                    "previous_isFirstOf": {
-                        "position": {
-                            "name": "top",
-                            "args": {}
-                        }
-                    },
-                    "next_isLastOf": {
-                        "position": {
-                            "name": "bottom",
-                            "args": {}
-                        }
-                    }
-                },
-                "items": [
-                    {
-                        "group": "previous_isFirstOf",
-                        "args": {},
-                        "attrs": {
-                            "circle": {
-                                "r": 1,
-                                "fillOpacity": 0,
-                                "pointerEvents": "stroke",
-                                "strokeWidth": 10,
-                                "stroke": "#feb663",
-                                "strokeOpacity": 0,
-                                "magnet": true
-                            }
-                        },
-                        "id": "_nT1pypxLpHs_M61kgPrMfP"
-                    },
-                    {
-                        "group": "next_isLastOf",
-                        "args": {},
-                        "attrs": {
-                            "circle": {
-                                "r": 1,
-                                "fillOpacity": 0,
-                                "pointerEvents": "stroke",
-                                "strokeWidth": 10,
-                                "stroke": "#feb663",
-                                "strokeOpacity": 0,
-                                "magnet": true
-                            }
-                        },
-                        "id": "_fFCmJTxWSFeZ4znZT0pu5l"
-                    }
-                ]
-            },
-            "angle": 0,
-            "cof_attrs": {
-                "algorithm": {
-                    "type": "EString",
-                    "annotations": {
-                        "type": "algorithm"
-                    }
-                },
-                "executionTime": {
-                    "type": "EString",
-                    "annotations": {
-                        "defaultUnit": "ns",
-                        "defaultValue": "10"
-                    }
-                },
-                "nonBlocking": {
-                    "type": "EBoolean",
-                    "annotations": {
-                        "defaultValue": "false"
-                    }
-                },
-                "systematicRead": {
-                    "type": "EBoolean",
-                    "annotations": {
-                        "defaultValue": "false"
-                    }
-                },
-                "systematicWrite": {
-                    "type": "EBoolean",
-                    "annotations": {
-                        "defaultValue": "false"
-                    }
-                },
-                "abortPort": {
-                    "type": "Port",
-                    "validPorts": {},
-                    "annotations": {
-                        "defaultValue": ""
-                    }
-                },
-                "dynamicDataSize": {
-                    "type": "EString",
-                    "annotations": {
-                        "defaultUnit": "kB",
-                        "defaultValue": "0"
-                    }
-                },
-                "dynamicPowerConsumption": {
-                    "type": "EString",
-                    "annotations": {
-                        "defaultUnit": "uW",
-                        "defaultValue": ""
-                    }
-                },
-                "type": {
-                    "annotations": {
-                        "defaultValue": "ACTIVE"
-                    }
-                },
-                "dynamicResourceLoad": {
-                    "type": "EString",
-                    "annotations": {
-                        "defaultValue": ""
-                    }
-                },
-                "name": {
-                    "type": "EString",
-                    "annotations": {
-                        "defaultValue": "init"
-                    }
-                },
-                "documentation": {
-                    "type": "EString",
-                    "annotations": {}
-                }
-            },
-            "cof_eClassName": "Operation",
-            "id": "_D_gTvPpJBlQH0qyzDdEYqa",
-            "z": 23,
-            "parent": "_58P_Pdj_3_L1xUPnbdEWQ9",
-            "attrs": {
-                "body": {
-                    "strokeWidth": "1"
-                },
-                "label": {
-                    "textWrap": {
-                        "text": "init",
-                        "height": 22
-                    },
-                    "fontFamily": "Segoe UI"
-                }
-            }
-        },
-        {
-            "type": "link",
-            "source": {
-                "id": "_D_gTvPpJBlQH0qyzDdEYqa",
-                "port": "_fFCmJTxWSFeZ4znZT0pu5l"
-            },
-            "target": {
-                "id": "_QBrqpnzlkTq2GMh5ZuhVeT",
-                "port": "_YSrsNbUlSosuYjlndhgSfV"
-            },
-            "markup": [
-                {
-                    "tagName": "path",
-                    "selector": "wrapper"
-                },
-                {
-                    "tagName": "path",
-                    "selector": "core"
-                }
-            ],
-            "defaultLabel": {
-                "attrs": {
-                    "rect": {
-                        "fillOpacity": 0
-                    }
-                },
-                "position": {
-                    "distance": -30,
-                    "args": {
-                        "absoluteDistance": true
-                    }
-                }
-            },
-            "id": "_CFJwV2AdZlx9JnRWURZ6eX",
-            "z": 24,
-            "parent": "_58P_Pdj_3_L1xUPnbdEWQ9",
-            "vertices": [
-                {
-                    "x": 91,
-                    "y": 141
-                },
-                {
-                    "x": 91,
-                    "y": 141
-                }
-            ],
-            "pathPoints": [
-                {
-                    "x": 91,
-                    "y": 132
-                },
-                {
-                    "x": 91,
-                    "y": 150
-                }
-            ],
-            "attrs": {
-                "wrapper": {
-                    "connection": true,
-                    "fill": "none",
-                    "stroke": "#ffffff",
-                    "strokeWidth": 5,
-                    "strokeOpacity": 0,
-                    "strokeLinejoin": "bevel"
-                },
-                "core": {
-                    "connection": true,
-                    "fill": "none",
-                    "stroke": "#000000",
-                    "strokeWidth": 1,
-                    "strokeDasharray": "",
-                    "strokeLinejoin": "bevel",
-                    "targetMarker": {
-                        "type": "path",
-                        "fill": "#000000",
-                        "stroke": "#000000",
-                        "stroke-width": 1,
-                        "d": "M 6 -3 0 0 6 3 0 0 Z"
-                    }
-                }
-            }
-        },
-        {
-            "type": "link",
-            "source": {
-                "id": "_58P_Pdj_3_L1xUPnbdEWQ9",
-                "port": "_fc6SzNvD79RjvRIu5hOFh7"
-            },
-            "target": {
-                "id": "_D_gTvPpJBlQH0qyzDdEYqa",
-                "port": "_nT1pypxLpHs_M61kgPrMfP"
-            },
-            "markup": [
-                {
-                    "tagName": "path",
-                    "selector": "wrapper"
-                },
-                {
-                    "tagName": "path",
-                    "selector": "core"
-                }
-            ],
-            "defaultLabel": {
-                "attrs": {
-                    "rect": {
-                        "fillOpacity": 0
-                    }
-                },
-                "position": {
-                    "distance": -30,
-                    "args": {
-                        "absoluteDistance": true
-                    }
-                }
-            },
-            "id": "_HhEYWEtPBSJ5DURPIFd0UG",
-            "z": 25,
-            "parent": "_58P_Pdj_3_L1xUPnbdEWQ9",
-            "pathPoints": [
-                {
-                    "x": 91,
-                    "y": 81
-                },
-                {
-                    "x": 91,
-                    "y": 110
                 }
             ],
             "attrs": {
@@ -4298,6 +3977,323 @@
                 "label": {
                     "textWrap": {
                         "text": "MsgQ"
+                    }
+                }
+            }
+        },
+        {
+            "type": "cofluent.component.ClockGenerator",
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "image",
+                    "selector": "background"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "divider"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "icon"
+                },
+                {
+                    "tagName": "image",
+                    "selector": "documentIcon"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "label"
+                }
+            ],
+            "position": {
+                "x": -143,
+                "y": 110
+            },
+            "size": {
+                "width": 100,
+                "height": 100
+            },
+            "ports": {
+                "groups": {
+                    "port": {
+                        "markup": "<rect />",
+                        "position": {
+                            "name": "top",
+                            "args": {
+                                "x": 0,
+                                "y": 0
+                            }
+                        }
+                    }
+                },
+                "items": [
+                    {
+                        "group": "port",
+                        "args": {},
+                        "attrs": {
+                            "rect": {
+                                "width": 100,
+                                "height": 100,
+                                "fill": "#ff0000",
+                                "fillOpacity": 0,
+                                "pointerEvents": "stroke",
+                                "strokeWidth": 10,
+                                "stroke": "#feb663",
+                                "strokeOpacity": 0,
+                                "magnet": true
+                            }
+                        },
+                        "z": 5,
+                        "id": "_Bn8XhH8S6mp1Dxzr4vYltb"
+                    }
+                ]
+            },
+            "angle": 0,
+            "cof_attrs": {
+                "period": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "us",
+                        "defaultValue": "1"
+                    }
+                },
+                "offset": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "us",
+                        "defaultValue": "1"
+                    }
+                },
+                "executionTime": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "ns",
+                        "defaultValue": "10"
+                    }
+                },
+                "cyclePeriod": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "ns",
+                        "defaultValue": ""
+                    }
+                },
+                "scope": {
+                    "annotations": {
+                        "defaultValue": "SYSTEM"
+                    }
+                },
+                "doNotStart": {
+                    "type": "EBoolean",
+                    "annotations": {
+                        "defaultValue": "false"
+                    }
+                },
+                "affinity": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultValue": ""
+                    }
+                },
+                "priority": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultValue": "0"
+                    }
+                },
+                "schedulingPolicy": {
+                    "annotations": {
+                        "defaultValue": "FIFO"
+                    }
+                },
+                "InterfaceBlockingBehavior": {
+                    "annotations": {
+                        "defaultValue": "RELEASE_CORE"
+                    }
+                },
+                "timeSlicePeriod": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "ms",
+                        "defaultValue": "10"
+                    }
+                },
+                "staticCodeSize": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "kB",
+                        "defaultValue": "0"
+                    }
+                },
+                "staticDataSize": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "kB",
+                        "defaultValue": "0"
+                    }
+                },
+                "staticPowerConsumption": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "uW",
+                        "defaultValue": "0"
+                    }
+                },
+                "dynamicPowerConsumption": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "uW",
+                        "defaultValue": "0"
+                    }
+                },
+                "cost": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultUnit": "USD",
+                        "defaultValue": "0"
+                    }
+                },
+                "dynamicResourceLoad": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultValue": "100"
+                    }
+                },
+                "doNotInstance": {
+                    "type": "EBoolean",
+                    "annotations": {
+                        "defaultValue": "false"
+                    }
+                },
+                "postElaboration": {
+                    "type": "EString",
+                    "annotations": {
+                        "type": "postElaboration"
+                    }
+                },
+                "constructor": {
+                    "type": "EString",
+                    "annotations": {
+                        "type": "constructor"
+                    }
+                },
+                "destructor": {
+                    "type": "EString",
+                    "annotations": {
+                        "type": "destructor"
+                    }
+                },
+                "includeInheritedHeader": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultValue": ""
+                    }
+                },
+                "inheritanceClass": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultValue": ""
+                    }
+                },
+                "callToInheritedConstructors": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultValue": ""
+                    }
+                },
+                "name": {
+                    "type": "EString",
+                    "annotations": {
+                        "defaultValue": "Clock"
+                    }
+                },
+                "documentation": {
+                    "type": "EString",
+                    "annotations": {}
+                }
+            },
+            "cof_eClassName": "ClockGenerator",
+            "id": "_hWKSsz8TC2xjjzt16RWqur",
+            "z": 31,
+            "parent": "_4tC65CeT-Ij44PgOInfek4",
+            "attrs": {}
+        },
+        {
+            "type": "link",
+            "source": {
+                "port": "_fc6SzNvD79RjvRIu5hOFh7",
+                "id": "_58P_Pdj_3_L1xUPnbdEWQ9"
+            },
+            "target": {
+                "port": "_YSrsNbUlSosuYjlndhgSfV",
+                "id": "_QBrqpnzlkTq2GMh5ZuhVeT"
+            },
+            "markup": [
+                {
+                    "tagName": "path",
+                    "selector": "wrapper"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "core"
+                }
+            ],
+            "defaultLabel": {
+                "attrs": {
+                    "rect": {
+                        "fillOpacity": 0
+                    }
+                },
+                "position": {
+                    "distance": -30,
+                    "args": {
+                        "absoluteDistance": true
+                    }
+                }
+            },
+            "id": "_ITcxYGs1ch5oV0dLKF5eUG",
+            "z": 32,
+            "parent": "_IotGu1eWedc3r92-Yg2UzK",
+            "pathPoints": [
+                {
+                    "x": 91,
+                    "y": 81
+                },
+                {
+                    "x": 91,
+                    "y": 150
+                }
+            ],
+            "attrs": {
+                "wrapper": {
+                    "connection": true,
+                    "fill": "none",
+                    "stroke": "#ffffff",
+                    "strokeWidth": 5,
+                    "strokeOpacity": 0,
+                    "strokeLinejoin": "bevel"
+                },
+                "core": {
+                    "connection": true,
+                    "fill": "none",
+                    "stroke": "#000000",
+                    "strokeWidth": 1,
+                    "strokeDasharray": "",
+                    "strokeLinejoin": "bevel",
+                    "targetMarker": {
+                        "type": "path",
+                        "fill": "#000000",
+                        "stroke": "#000000",
+                        "stroke-width": 1,
+                        "d": "M 6 -3 0 0 6 3 0 0 Z"
                     }
                 }
             }
