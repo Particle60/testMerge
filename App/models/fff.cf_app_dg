@@ -1427,15 +1427,15 @@
                 },
                 {
                     "x": 308,
-                    "y": 245
+                    "y": 240.5
                 },
                 {
                     "x": 310,
-                    "y": 245
+                    "y": 240.5
                 },
                 {
                     "x": 310,
-                    "y": 256
+                    "y": 247
                 }
             ],
             "attrs": {
@@ -1841,7 +1841,7 @@
             "pathPoints": [
                 {
                     "x": 310,
-                    "y": 278
+                    "y": 269
                 },
                 {
                     "x": 310,
@@ -1904,7 +1904,7 @@
             ],
             "position": {
                 "x": 275,
-                "y": 256
+                "y": 247
             },
             "size": {
                 "width": 70,
@@ -1985,7 +1985,7 @@
                 "systematicRead": {
                     "type": "EBoolean",
                     "annotations": {
-                        "defaultValue": "false"
+                        "defaultValue": "true"
                     }
                 },
                 "systematicWrite": {
