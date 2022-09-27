@@ -2296,7 +2296,7 @@
                     "type": "EString",
                     "annotations": {
                         "defaultUnit": "ns",
-                        "defaultValue": "10"
+                        "defaultValue": "106"
                     }
                 },
                 "nonBlocking": {
@@ -2308,7 +2308,7 @@
                 "systematicRead": {
                     "type": "EBoolean",
                     "annotations": {
-                        "defaultValue": "false"
+                        "defaultValue": "true"
                     }
                 },
                 "systematicWrite": {
